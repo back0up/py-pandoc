@@ -40,13 +40,13 @@ tmp = 'tmp'
 spec = dict(
     Windows=dict(
         os='win', move=[('Library/bin', tmp)], version=conda_version, build=0,
-        hash_='53ec6f98c3beef57527f431f1d1236ac292ecdac33629d4e259d01fe1a5bcc79'),
+        hash_='55ec6f98c3beef57527f431f1d1236ac292ecdac33629d4e259d01fe1a5bcc79'),
     Linux=dict(
         os='linux', move=[('bin', tmp)], version=conda_version, build=0,
-        hash_='532a604c013b77be2e315b70d4e55b3fdbd47c53b19b6f1ac7cf9e3dbfa3e871'),
+        hash_='552a604c013b77be2e315b70d4e55b3fdbd47c53b19b6f1ac7cf9e3dbfa3e871'),
     Darwin=dict(
         os='osx', move=[('bin', tmp)], version=conda_version, build=0,
-        hash_='6a54c6cfbd15dc45ba3703268682cf139de782a8103cb3c65fb8f4efef6a9ee4'),
+        hash_='5554c6cfbd15dc45ba3703268682cf139de782a8103cb3c65fb8f4efef6a9ee4'),
 )[platform.system()]
 # spec = spec.get(platform.system(), spec['Linux'])
 URL = 'https://anaconda.org/conda-forge/pandoc/{version}/download/{os}-64/pandoc-{version}-{build}.tar.bz2'.format(**spec)
